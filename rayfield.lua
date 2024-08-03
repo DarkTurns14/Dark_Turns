@@ -17,7 +17,7 @@ local RayfieldLibrary = {
     Flags = {},
     Theme = {
         Default = {
-            TextFont = "Fantasy", -- Default will use the various font faces used across Rayfield
+            TextFont = "Default", -- Default will use the various font faces used across Rayfield
             TextColor = Color3.fromRGB(240, 240, 240),
             Background = Color3.fromRGB(25, 25, 25),
             Topbar = Color3.fromRGB(34, 34, 34),
@@ -49,7 +49,7 @@ local RayfieldLibrary = {
             PlaceholderColor = Color3.fromRGB(178, 178, 178)
         },
         Light = {
-            TextFont = "Fantasy", -- Default will use the various font faces used across Rayfield
+            TextFont = "Gotham", -- Default will use the various font faces used across Rayfield
             TextColor = Color3.fromRGB(50, 50, 50), -- i need to make all text 240, 240, 240 and base gray on transparency not color to do this
             Background = Color3.fromRGB(255, 255, 255),
             Topbar = Color3.fromRGB(217, 217, 217),
@@ -1164,10 +1164,10 @@ function RayfieldLibrary:CreateWindow(Settings)
     LoadingFrame.Subtitle.TextTransparency = 1
     Main.Shadow.Image.ImageTransparency = 1
     LoadingFrame.Version.TextTransparency = 1
-    LoadingFrame.Title.Text = Settings.LoadingTitle or "Rayfield Interface Suite"
-    LoadingFrame.Subtitle.Text = Settings.LoadingSubtitle or "by Sirius"
+    LoadingFrame.Title.Text = Settings.LoadingTitle or "Grimm Hub Interface Suite"
+    LoadingFrame.Subtitle.Text = Settings.LoadingSubtitle or "by Dark_Turns"
     if Settings.LoadingTitle ~= "Rayfield Interface Suite" then
-        LoadingFrame.Version.Text = "Dark_Turns"
+        LoadingFrame.Version.Text = "Grimm Hub UI"
     end
     Topbar.Visible = false
     Elements.Visible = false
